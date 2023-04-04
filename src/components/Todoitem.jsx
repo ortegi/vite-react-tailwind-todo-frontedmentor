@@ -6,7 +6,7 @@ const TodoItem = React.forwardRef(  ({ todo, removeTodo, updateTodo, ...props },
     const { id, title, completed } = todo;
 
     return (
-        <article {...props} ref={ref} className="flex gap-4 border-b border-b-gray-400 py-4 px-4 dark:bg-gray-800">
+        <article {...props} ref={ref} className="flex gap-4 border-b border-b-gray-400 py-4 px-4 dark:bg-gray-800 transition-all duration-1000">
             <button
                 className={`h-5 w-5 flex-none rounded-full border-2  ${
                     completed
